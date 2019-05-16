@@ -262,7 +262,7 @@ function calculate()
     global $input;
 
     for ($i = 0; $i < 10; ++$i) {
-        $hidden_layer1["data"][$i] = sigmoid($input[0] * $hidden_layer1["brain"][$i][0]);
+        $hidden_layer1["data"][$i] = sigmoid($input * $hidden_layer1["brain"][$i][0]);
     }
 
     for ($i = 0; $i < 10; ++$i) {
